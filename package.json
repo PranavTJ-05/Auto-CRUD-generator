@@ -1,0 +1,30 @@
+{
+  "name": "crud-api-generator",
+  "version": "2.0.0",
+  "description": "Automatic CRUD API generator from Drizzle ORM schemas — generates full MVC TypeScript project",
+  "type": "module",
+  "main": "dist/cli.js",
+  "bin": {
+    "crud-gen": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/cli.ts",
+    "start": "node dist/cli.js",
+    "generate": "tsx src/cli.ts generate"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "commander": "^12.1.0",
+    "ora": "^8.0.1",
+    "ts-morph": "^23.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "tsx": "^4.15.0",
+    "typescript": "^5.5.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
